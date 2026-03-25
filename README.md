@@ -196,29 +196,5 @@ ALPHA_VANTAGE_API_KEY=xxx
 
 ---
 
-## 📊 会话管理
-
-- 会话存储在 `sessions/` 目录
-- 每个会话一个 JSON 文件
-- `sessions.json` 记录会话元数据
-- 支持历史压缩 (超出阈值自动总结)
-
----
-
-## 🚧 待实现功能
-
-- [ ] Web 界面
-- [ ] 飞书机器人集成
-- [ ] 流式输出
-- [ ] 完整的 RAG 索引 (LlamaIndex)
-- [ ] 会话压缩算法
-
----
-
-## 📄 许可证
-
-MIT License
-
----
 
 **基于 LangChain 构建 | 本地优先 | 安全可控**
