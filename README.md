@@ -1,6 +1,7 @@
 # 🤖 Mini OpenClaw
 
 **轻量级 AI Agent 框架** - 基于 LangChain 构建，支持 Skills 系统和本地记忆管理
+参照fufan开源社区内容
 
 ---
 
