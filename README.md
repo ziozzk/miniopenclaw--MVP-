@@ -196,5 +196,10 @@ ALPHA_VANTAGE_API_KEY=xxx
 
 ---
 
+##  简单运行
+
+<img width="2418" height="1259" alt="屏幕截图 2026-03-24 210213" src="https://github.com/user-attachments/assets/ddd144a9-166f-4b5b-9d5c-0c1d0b79cff7" />
+
+---
 
 **基于 LangChain 构建 | 本地优先 | 安全可控**
