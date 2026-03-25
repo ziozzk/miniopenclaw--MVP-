@@ -1,0 +1,38 @@
+# Mini OpenClaw 配置文件
+
+# LLM 配置
+llm:
+  provider: qwen  # 通义千问
+  model: qwen-turbo  # 免费模型
+  api_key: ${DASHSCOPE_API_KEY}
+  temperature: 0.7
+  max_tokens: 4096
+
+# 工具配置
+tools:
+  terminal:
+    enabled: true
+    root_dir: .
+  python_repl:
+    enabled: true
+    timeout: 30
+  fetch_url:
+    enabled: true
+    timeout: 10
+  read_file:
+    enabled: true
+    root_dir: .
+  rag_search:
+    enabled: true
+    top_k: 5
+
+# 会话配置
+sessions:
+  storage_path: sessions/
+  max_history: 50
+  compress_threshold: 10000
+
+# 服务器配置
+server:
+  host: 0.0.0.0
+  port: 8000

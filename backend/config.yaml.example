@@ -1,0 +1,39 @@
+# Mini OpenClaw 配置文件示例
+# 复制为 config.yaml 并修改配置
+
+# LLM 配置
+llm:
+  provider: kimi  # 或 openai, qwen (通义千问)
+  model: moonshot-v1-8k  # Kimi 模型：moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k
+  api_key: ${KIMI_API_KEY}  # 从环境变量读取
+  temperature: 0.7
+  max_tokens: 4096
+
+# 工具配置
+tools:
+  terminal:
+    enabled: true
+    root_dir: .  # 限制操作范围
+  python_repl:
+    enabled: true
+    timeout: 30
+  fetch_url:
+    enabled: true
+    timeout: 10
+  read_file:
+    enabled: true
+    root_dir: .  # 限制读取范围
+  rag_search:
+    enabled: true
+    top_k: 5
+
+# 会话配置
+sessions:
+  storage_path: sessions/
+  max_history: 50  # 最大历史消息数
+  compress_threshold: 10000  # 压缩阈值 (token 数)
+
+# 服务器配置
+server:
+  host: 0.0.0.0
+  port: 8000

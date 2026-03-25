@@ -1,0 +1,34 @@
+# Mini OpenClaw 依赖
+
+# LangChain 核心 (使用最新包结构)
+langchain>=0.3.0
+langchain-openai>=0.2.0  # OpenAI/通义千问模型
+langchain-anthropic>=0.2.0  # Claude 模型 (可选)
+langchain-google-genai>=0.1.0  # Google Gemini (可选)
+
+# LangChain 社区工具
+langchain-community>=0.3.0
+langchain-experimental>=0.3.0  # Python REPL
+
+# LlamaIndex (RAG 检索)
+llama-index>=0.10.0
+
+# Web 框架
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# HTTP 请求
+requests>=2.31.0
+httpx>=0.25.0
+
+# HTML 清洗
+beautifulsoup4>=4.12.0
+html2text>=2020.1.16
+
+# 配置管理
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# 向量数据库 (可选，用于 RAG)
+chromadb>=0.4.0
